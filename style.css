@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: #c4e2f5;
+    color: #1c3144;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    position: relative;
+    background-color: #2C5EAD;
+    color: white;
+    text-align: center;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.logo-container {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+.logo-container img {
+    width: 200px; 
+    height: 113px;
+    object-fit: cover;
+    border-radius: 50%; 
+}
+
+
+.header-container {
+    padding: 15px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+
+
+nav {
+    background-color: #1591DC;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #fff;
+    padding: 14px 24px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #4BB8FA; 
+}
+
+nav ul li a:active {
+    background-color: #72c8fc; 
+}
+
+nav ul li a img {
+    width: 18px;
+    height: 18px;
+    filter: invert(1);
+}
+
+.hero {
+    background-image: url(./assets/img/portada.jpg);
+    width: 100%;
+    height: 280px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 35px 20px;
+    flex: 1;
+}
+
+.card-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.card-box h2 {
+    color: #2C5EAD;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: #fff;
+    padding: 22px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    color: #1591DC;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #415a77;
+}
+
+
+.card img, 
+.cards-grid img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #eef5f9;
+}
+
+.placeholder-img {
+    background: #eef5f9;
+    height: 140px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2C5EAD;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2C5EAD;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #1591DC;
+}
+
+.formulario{
+
+    width: 60%;
+	margin: 50px auto;
+	padding: 15px;
+
+}
+
+
+
+.formulario h2{
+	margin-bottom: 20px;
+    
+}
+
+
+
+form{
+text-align:left;
+}
+
+
+
+input, textarea, select {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0px; 
+border: 1px solid #ccc;
+border-radius: 10px; 
+background-color: #fff;
+
+}
+
+
+
+.guardar, .cancelar {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 10px;
+}
+
+.guardar{
+    background-color: #0a33ed;
+    color: white;
+}
+
+
+
+.guardar:hover{
+    background-color: #0db9f779 ;
+}
+
+.cancelar {
+    background-color: cornflowerblue;
+    color: white;
+
+}
+
+
+
+.cancelar:hover{
+    background-color: #0db9f779;
+
+}
+
+
+
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.boton{
+	width: 70px;
+	height: 40px;
+	background-color: cornflowerblue;
+	border-radius: 5px;
+
+	position: fixed;
+	bottom: 55px;
+	right: 15px;
+	text-align: center;
+
+     transition: all 1s;
+	
+}
+
+.boton:hover{
+	width: 90px;
+    background-color: #0a33ed;
+    
+}
+
+.boton p{
+	color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 10px auto;
+}
+
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    background-color: #2C5EAD;
+    color: white;
+    font-size: 0.9rem;
+    z-index: 1000;
+}
+
+
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.redes-sociales a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.redes-sociales a:hover {
+    color: #F4B6D2;
+}
